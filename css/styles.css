@@ -1,4 +1,4 @@
-/* Body and main wrapper */
+/* Body and wrapper */
 body {
   background-image: url("../images/black.jpg");
   background-repeat: repeat;
@@ -10,7 +10,7 @@ body {
 #page-wrapper {
   width: 960px;
   margin: 40px auto;
-  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 1);
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,1);
   border-radius: 12px 12px 0 0;
   background-color: #fff;
 }
@@ -28,12 +28,12 @@ body {
   position: absolute;
   left: 420px;
   top: 10px;
-  font-size: 3em;
   font-family: 'Devonshire', cursive;
   color: #E35335;
+  font-size: 3em;
 }
 
-#header a#logo1 img {
+#logo1 img {
   margin-left: 20px;
   height: 80px;
 }
@@ -46,8 +46,8 @@ body {
 
 #main-nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
   display: inline-block;
 }
 
@@ -68,7 +68,7 @@ body {
   color: #333;
 }
 
-/* Main content */
+/* Main content and sidebar */
 #content-wrapper {
   display: flex;
   gap: 25px;
@@ -77,20 +77,10 @@ body {
   background-repeat: repeat;
 }
 
-/* Main text area */
-#main-content {
-  flex: 1;
-}
-
-#main-content h2 strong {
-  font-size: 2em;
-  color: #111;
-}
-
-/* Side content */
+#main-content { flex: 1; }
 #side-content {
   width: 200px;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255,255,255,0.85);
   padding: 10px;
   border-left: 2px solid #aaa;
 }
@@ -112,27 +102,20 @@ body {
 }
 
 /* Lists */
-#bul1 li,
-#bul2 li {
-  margin-bottom: 5px;
-}
+#bul1 li, #bul2 li { margin-bottom: 5px; }
 
-/* Images */
+/* Right-aligned image */
 .image-r {
   float: right;
-  border: 2px solid blue;
   width: 300px;
   padding: 5px;
+  border: 2px solid blue;
   background-color: white;
   margin: 10px 0 10px 20px;
 }
 
-/* Centered YouTube video */
-#center {
-  clear: both;
-  text-align: center;
-  padding-top: 20px;
-}
+/* Centered video */
+#center { text-align: center; padding-top: 20px; }
 
 /* Footer */
 #footer {
@@ -146,6 +129,4 @@ body {
 }
 
 /* Strong emphasis */
-strong {
-  font-weight: 900;
-}
+strong { font-weight: 900; }
