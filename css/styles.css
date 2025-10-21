@@ -1,32 +1,34 @@
-/* Body and wrapper */
+/* Body and main wrapper */
 body {
   background-image: url("../images/black.jpg");
   background-repeat: repeat;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   color: #111;
-  margin: 0;
 }
 
 #page-wrapper {
   width: 960px;
   margin: 40px auto;
-  background-color: #fff;
-  box-shadow: 0 4px 8px 2px rgba(0,0,0,1);
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 1);
   border-radius: 12px 12px 0 0;
+  background-color: #fff;
 }
 
 /* Header */
 #header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   background-color: #111;
   border-radius: 12px 12px 0 0;
   padding: 20px 0;
 }
 
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+#header #logo1 img {
+  height: 80px;
+  width: auto;
 }
 
 #header h1 {
@@ -34,10 +36,6 @@ body {
   color: #E35335;
   font-size: 3em;
   margin: 0;
-}
-
-#logo1 img {
-  height: 80px;
 }
 
 /* Navigation */
@@ -48,8 +46,9 @@ body {
 
 #main-nav ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 
 #main-nav ul li {
@@ -69,17 +68,18 @@ body {
   color: #333;
 }
 
-/* Main content + sidebar using flexbox */
+/* Main content */
 #content-wrapper {
-  display: flex;
-  gap: 25px;
-  padding: 15px;
   background-image: url("../images/repeating.png");
   background-repeat: repeat;
+  overflow: hidden;
+  padding: 15px;
 }
 
 #main-content {
-  flex: 1;
+  width: 700px;
+  float: left;
+  margin-right: 25px;
 }
 
 #main-content h2 strong {
@@ -87,10 +87,11 @@ body {
   color: #111;
 }
 
-/* Sidebar */
+/* Side content */
 #side-content {
   width: 200px;
-  background-color: rgba(255,255,255,0.85);
+  float: right;
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 10px;
   border-left: 2px solid #aaa;
 }
@@ -120,15 +121,18 @@ body {
 /* Images */
 .image-r {
   float: right;
-  border: 2px solid blue;
+  margin-left: 20px;
+  margin-bottom: 20px;
   width: 300px;
+  height: auto;
+  border: 2px solid blue;
   padding: 5px;
   background-color: white;
-  margin: 10px 0 10px 20px;
 }
 
 /* Centered YouTube video */
 #center {
+  clear: both;
   text-align: center;
   padding-top: 20px;
 }
@@ -140,6 +144,7 @@ body {
   text-align: center;
   padding-top: 25px;
   height: 60px;
+  clear: both;
   border-top: 3px solid #E35335;
 }
 
