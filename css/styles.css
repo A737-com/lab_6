@@ -1,4 +1,4 @@
-/* Body and wrapper */
+/* Body and page wrapper */
 body {
   background-image: url("../images/black.jpg");
   background-repeat: repeat;
@@ -68,7 +68,7 @@ body {
   color: #333;
 }
 
-/* Main content and sidebar */
+/* Main Content and Sidebar */
 #content-wrapper {
   display: flex;
   gap: 25px;
@@ -78,6 +78,31 @@ body {
 }
 
 #main-content { flex: 1; }
+
+/* Main image first */
+.main-image {
+  display: block;
+  width: 400px;
+  margin: 0 auto 20px auto;
+  padding: 5px;
+  border: 2px solid blue;
+  background-color: white;
+}
+
+/* Text area below image */
+.text-area {
+  background-color: rgba(255,255,255,0.85);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.text-area h2 strong { font-size: 2em; color: #111; }
+.text-area p { margin-bottom: 10px; }
+
+/* Lists inside text */
+#bul1 li, #bul2 li { margin-bottom: 5px; }
+
+/* Sidebar */
 #side-content {
   width: 200px;
   background-color: rgba(255,255,255,0.85);
@@ -97,22 +122,7 @@ body {
   text-decoration: none;
 }
 
-#side-content a:hover {
-  text-decoration: underline;
-}
-
-/* Lists */
-#bul1 li, #bul2 li { margin-bottom: 5px; }
-
-/* Right-aligned image */
-.image-r {
-  float: right;
-  width: 300px;
-  padding: 5px;
-  border: 2px solid blue;
-  background-color: white;
-  margin: 10px 0 10px 20px;
-}
+#side-content a:hover { text-decoration: underline; }
 
 /* Centered video */
 #center { text-align: center; padding-top: 20px; }
@@ -128,5 +138,5 @@ body {
   clear: both;
 }
 
-/* Strong emphasis */
+/* Strong text */
 strong { font-weight: 900; }
