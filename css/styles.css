@@ -17,25 +17,25 @@ body {
 
 /* Header */
 #header {
-  position: relative;
+  display: flex;               /* Use flex for logo + text */
+  align-items: center;         /* Vertically center */
+  justify-content: center;     /* Center horizontally */
+  gap: 20px;                   /* Space between logo and text */
   background-color: #111;
   border-radius: 12px 12px 0 0;
-  padding: 20px 0;
-  text-align: center;
+  padding: 20px;
+}
+
+#header img#logo1 {
+  height: 80px;
+  width: auto;
 }
 
 #header h1 {
-  position: absolute;
-  left: 420px;
-  top: 10px;
   font-family: 'Devonshire', cursive;
   color: #E35335;
   font-size: 3em;
-}
-
-#logo1 img {
-  margin-left: 20px;
-  height: 80px;
+  margin: 0;
 }
 
 /* Navigation */
