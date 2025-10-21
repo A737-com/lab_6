@@ -1,40 +1,42 @@
-/* Body and main wrapper */
+/* Body and wrapper */
 body {
   background-image: url("../images/black.jpg");
   background-repeat: repeat;
-  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   color: #111;
+  margin: 0;
 }
 
 #page-wrapper {
   width: 960px;
   margin: 40px auto;
-  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 1);
-  border-radius: 12px 12px 0 0;
   background-color: #fff;
+  box-shadow: 0 4px 8px 2px rgba(0,0,0,1);
+  border-radius: 12px 12px 0 0;
 }
 
 /* Header */
 #header {
-  position: relative;
   background-color: #111;
   border-radius: 12px 12px 0 0;
   padding: 20px 0;
-  text-align: center;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 #header h1 {
-  position: absolute;
-  left: 420px;
-  top: 10px;
-  font-size: 3em;
   font-family: 'Devonshire', cursive;
   color: #E35335;
+  font-size: 3em;
+  margin: 0;
 }
 
-#header a#logo1 img {
-  margin-left: 20px;
+#logo1 img {
   height: 80px;
 }
 
@@ -46,9 +48,8 @@ body {
 
 #main-nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
-  display: inline-block;
+  margin: 0;
 }
 
 #main-nav ul li {
@@ -68,19 +69,17 @@ body {
   color: #333;
 }
 
-/* Main content */
+/* Main content + sidebar using flexbox */
 #content-wrapper {
+  display: flex;
+  gap: 25px;
+  padding: 15px;
   background-image: url("../images/repeating.png");
   background-repeat: repeat;
-  overflow: hidden;
-  padding: 15px;
 }
 
-/* Main text area */
 #main-content {
-  width: 700px;
-  float: left;
-  margin-right: 25px;
+  flex: 1;
 }
 
 #main-content h2 strong {
@@ -88,11 +87,10 @@ body {
   color: #111;
 }
 
-/* Side content */
+/* Sidebar */
 #side-content {
   width: 200px;
-  float: right;
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255,255,255,0.85);
   padding: 10px;
   border-left: 2px solid #aaa;
 }
@@ -131,7 +129,6 @@ body {
 
 /* Centered YouTube video */
 #center {
-  clear: both;
   text-align: center;
   padding-top: 20px;
 }
@@ -143,7 +140,6 @@ body {
   text-align: center;
   padding-top: 25px;
   height: 60px;
-  clear: both;
   border-top: 3px solid #E35335;
 }
 
